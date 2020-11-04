@@ -20,18 +20,26 @@ void setup()
 
 void draw()
 {
-  fill(0, 0, 0);
+  fill(0, 0, 00);
   rect(0, 0, width, height);
   star = removeParticle(star);
   for (int i = 0; i < backgroundX.length; i++) {
     fill((int)(Math.random() * 255), 0, 50);
     rect(backgroundX[i], backgroundY[i], 5, 5);
   }
-  fill(0, 255, 30);
+  fill(0, 255, 15);
   ellipse(width/2, height/2, 700, 700);
   rect(width/2 - 350, height/2, 700, 1000);
+  fill(0, 255, 10);
+  rect(width/2 - 350, height/2 + 300, 700, 1000);
   fill(150, 100, 30);
   rect(width/2 - 300, height/2, 600, 200, 50);
+  /*
+  fill(150, 50, 40);
+   rect(width/2 - 100, height/2 + 10, 390, 150, 25);
+   */
+  fill(150, 75, 50);
+  rect(width/2, height/2 + 20, 250, 100, 25);
   for (int i = 0; i < star.length; i++)
   {
     star[i].move();
